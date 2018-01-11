@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flow Connector</title>
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="flow.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- STEP 1 -->
+        <div class="step">
+            <div class="row">
+                <div class="col-6">
+                    <!-- ITEM DE DENTRO DO STEP -->
+                    <div class="card">
+                        <div class="card-block">
+                            Você tem um minutinho pra ouvir a palavra de Marcos?
+                        </div>
+                        <div class="card-block">
+                            <ul class="flow-connector-nav ----- pagination justify-content-center">
+                                <li class="has-connector has-connector-bottom has-connector-color-1 ----- page-item">
+                                    <span class="page-link">Sim</span>
+                                    <svg>
+                                        <line x1="5" y1="0" x2="37" y2="100" stroke="red" stroke-width="1"/>
+                                    </svg>
+                                </li>
+                                <li class="has-connector has-connector-bottom has-connector-color-2 ----- page-item">
+                                    <span class="page-link">Não</span>
+                                    <svg>
+                                        <line x1="5" y1="0" x2="290" y2="100" stroke="blue" stroke-width="1"/>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+
+        <div class="step">
+            <div class="row">
+                <div class="col">
+                    <!-- ITEM DE DENTRO DO STEP -->
+                    <div class="card">
+                        <div class="card-block step-block has-connector has-connector-top has-connector-color-1">
+                            Ok, então eu quero jogar um jogo!
+                        </div>
+                        <div class="card-block">
+                            <ul class="flow-connector-nav ----- pagination justify-content-center">
+                                <li class="has-connector has-connector-bottom has-connector-color-1 ----- page-item">
+                                    <span class="page-link">Vamos lá!</span>
+                                </li>
+                                <li class="has-connector has-connector-bottom has-connector-color-2 ----- page-item">
+                                    <span class="page-link">Agora não</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- ITEM DE DENTRO DO STEP -->
+                    <div class="card">
+                        <div class="card-block step-block has-connector has-connector-top has-connector-color-2">
+                            Ok peço desculpas por chatealo nessa tarde {{api.weather.city.now}} de {{api.date.day.now}} 😐
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
