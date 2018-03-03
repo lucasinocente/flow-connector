@@ -2,7 +2,7 @@
 
 A simple way to connect cards.
 
-![alt text](https://i.imgur.com/glAxcEC.png "Example")
+![alt text](https://i.imgur.com/WGocRC7.png "Example")
 
 ## To install
 npm install
