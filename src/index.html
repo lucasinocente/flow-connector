@@ -16,71 +16,87 @@
 <body>
     <div class="container">
 
-        <!-- STEP 1 -->
-        <div class="step">
             <div class="row">
-                <div class="col-6">
+                <!-- STEP 1 -->
+                <div class="col">
                     <!-- ITEM DE DENTRO DO STEP -->
-                    <div class="card">
+                    <div class="card card-outline-success step">
                         <div class="card-block">
-                            Você tem um minutinho pra ouvir a palavra de Marcos?
+                            <h3>Criação de conta:</h3>
+                            <p>Request para cadastro de conta da tela de /login</p>
+                            <p><strong>http://app.zenvia.com/login</strong></p>
                         </div>
-                        <div class="card-block">
-                            <ul class="flow-connector-nav ----- pagination justify-content-center">
-                                <!-- RESPOSTA EXEMPLO DE QUICK REPLY -->
+                        <div>
+                            <ul class="flow-connector-nav ----- pagination">
+                                <!-- CHAMADA DE EXEMPLO -->
                                 <li class="has-connector has-connector-bottom has-connector-color-1 ----- page-item">
-                                    <span class="page-link">Sim</span>
-                                    <svg>
-                                        <line x1="5" y1="0" x2="37" y2="100" stroke="red" stroke-width="1"/>
-                                    </svg>
-                                </li>
-                                <!-- RESPOSTA EXEMPLO DE QUICK REPLY -->
-                                <li class="has-connector has-connector-bottom has-connector-color-2 ----- page-item">
-                                    <span class="page-link">Não</span>
-                                    <svg>
-                                        <line x1="5" y1="0" x2="290" y2="100" stroke="blue" stroke-width="1"/>
-                                    </svg>
+                                    <span class="page-link">
+                                        /POST
+                                        <svg>
+                                            <line x1="50" y1="0" x2="0" y2="0" stroke="green" stroke-width="2"/>
+                                        </svg>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- STEP 2 -->
-
-        <div class="step">
-            <div class="row">
+                <!-- STEP 1 -->
                 <div class="col">
                     <!-- ITEM DE DENTRO DO STEP -->
-                    <div class="card">
-                        <div class="card-block step-block has-connector has-connector-top has-connector-color-1">
-                            Ok, então eu quero jogar um jogo!
-                        </div>
+                    <div class="card card-outline-success step">
                         <div class="card-block">
-                            <ul class="flow-connector-nav ----- pagination justify-content-center">
-                                <li class="has-connector has-connector-bottom has-connector-color-1 ----- page-item">
-                                    <span class="page-link">Vamos lá!</span>
-                                </li>
+                            <h3>Request:</h3>
+                            <p>{ request: {
+                                    user: 'test';
+                                    pass: 'test'
+                                } }</p>
+                            <p><strong>http://api.zenvia.com/credentials/login</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- STEP 1 -->
+                <div class="col">
+                    <!-- ITEM DE DENTRO DO STEP -->
+                    <div class="card card-outline-danger step">
+                        <div class="card-block">
+                            <h3>Criação de conta:</h3>
+                            <p>Request para cadastro de conta da tela de /login</p>
+                            <p><strong>http://app.zenvia.com/login</strong></p>
+                        </div>
+                        <div>
+                            <ul class="flow-connector-nav ----- pagination">
+                                <!-- CHAMADA DE EXEMPLO -->
                                 <li class="has-connector has-connector-bottom has-connector-color-2 ----- page-item">
-                                    <span class="page-link">Agora não</span>
+                                    <span class="page-link">
+                                        /POST
+                                        <svg>
+                                            <line x1="50" y1="0" x2="0" y2="0" stroke="red" stroke-width="2"/>
+                                        </svg>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <!-- STEP 1 -->
                 <div class="col">
                     <!-- ITEM DE DENTRO DO STEP -->
-                    <div class="card">
-                        <div class="card-block step-block has-connector has-connector-top has-connector-color-2">
-                            Ok peço desculpas por chatealo nessa tarde {{api.weather.city.now}} de {{api.date.day.now}} 😐
+                    <div class="card card-outline-danger step">
+                        <div class="card-block">
+                            <h3>Request:</h3>
+                            <p>{ request: {
+                                    user: 'test';
+                                    pass: 'test'
+                                } }</p>
+                            <p><strong>http://api.zenvia.com/credentials/login</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
 
     </div>
 </body>

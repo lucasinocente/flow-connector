@@ -1,16 +1,24 @@
-.step {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.row {
+    padding: 50px 0px 0px;
 }
 
-
-
+.step {
+    margin-right: 50px;
+    position: relative;
+    padding-right: 10%;
+    background: white;
+}
 
 .has-connector {
     position: relative;
+    display: block;
 }
 
-.has-connector::after {
+.page-link {
+    position: relative;
+}
+
+.has-connector .page-link::after {
     content: "";
     display: block;
     background: black;
@@ -18,27 +26,36 @@
     width: 10px;
     border-radius: 10px;
     position: absolute;
-    left: 50%;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
 }
 
-.has-connector-bottom::after {
+.has-connector-bottom .page-link::after {
     bottom: -5px;
 }
-.has-connector-top::after {
+.has-connector-top .page-link::after {
     top: -5px;
 }
 
-.has-connector-color-1::after {
-    background: red;
+.has-connector-color-1 .page-link::after {
+    background: green;
 }
-.has-connector-color-2::after {
-    background:blue;
+.has-connector-color-2 .page-link::after {
+    background:red;
 }
-
-
 
 .has-connector svg {
+    width: 50px;
+    height: 5px;
     position: absolute;
-    left: 50%;
-    top: 38px; /* altura do botão */
+    left: 100%;
+    top: 18px; 
+}
+
+.flow-connector-nav {
+    position: absolute;
+    top: 50px;
+    left: 97%;
+    height: 100%;
 }
